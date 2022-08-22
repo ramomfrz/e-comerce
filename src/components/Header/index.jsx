@@ -6,7 +6,7 @@ const Head = () => {
         <header className="header">
             <div className="container">
                 <p className="paragraph-header1">uma seleção de produtos</p>
-                <h1>especial para você</h1>
+                <h1 className="titleh1">especial para você</h1>
                 <p className="paragraph-header2">Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
                 <nav className="navButton">
                     <button className="buttonHeader">Conheça a Linx</button>
