@@ -10,7 +10,7 @@ const Share = () => {
                         <div className="sectionContainer">
                             <div className="inputShare">
                                 <label>Nome do seu amigo:</label>
-                                <input type="text" className="inputDados" />
+                                <input type="text" className="inputDados" required />
                             </div>
                             <div className="inputShare">
                                 <label>E-mail:</label>
