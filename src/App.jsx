@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
-import Head from "./components/Header/index.jsx"
-import Body from "./components/Body/index.jsx"
-import Cards from "./components/Cards/index.jsx"
-import Share from "./components/Share/index.jsx"
-import Footer from "./components/Footer/index.jsx"
+import Head from "./components/Header/"
+import Body from "./components/Body/"
+import Cards from "./components/Cards/"
+import Share from "./components/Share/"
+import Footer from "./components/Footer/"
 import "./global.css"
 
 function App() {
