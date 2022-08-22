@@ -26,7 +26,7 @@
        text-align: center;
        width: 100%;
        height: 400px;
-       /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 68%); */
+       clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 68%);
        font-size: 25px;
 
    }
@@ -207,28 +207,6 @@
        grid-template-columns: 1fr 1fr 1fr 1fr;
    }
 
-   @media (max-width: 1000px) {
-       .containerMap {
-           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-       }
-
-       .navButton {
-           display: grid;
-           grid-template-columns: 1fr 1fr;
-       }
-
-       .bodyAll {
-           flex-direction: column;
-       }
-
-       .containerCards {
-           flex-direction: row;
-       }
-
-       .sectionContainer {
-           flex-direction: column;
-       }
-   }
 
    .buttonMoreProducts {
        width: 260px;
@@ -314,4 +292,91 @@
        text-align: center;
        justify-content: center;
        margin-top: 157px;
+   }
+
+   /* ----------------------------- MOBILE ------------------------------------- */
+
+   @media (max-width: 1000px) {
+       .header {
+           background-color: #707070;
+           clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+       }
+
+       .containerMap {
+           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+       }
+
+       .navButton {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           margin-left: 38px;
+           gap: 21px;
+       }
+
+       .bodyAll {
+           flex-direction: column;
+       }
+
+       .containerCards {
+           flex-direction: row;
+       }
+
+       .sectionContainer {
+           flex-direction: column;
+       }
+
+       .paragraph-header1,
+       .paragraph-header2,
+       .titleh1 {
+           text-align: left;
+           margin-left: 16px;
+
+       }
+
+       .titleh1 {
+           font-size: 40px;
+           margin-bottom: 9px;
+       }
+
+       .paragraph-header2 {
+           font-size: 15px;
+           margin-top: 9px;
+       }
+
+       .tituloh3,
+       .bodyText {
+           margin: 10px 5px -20px;
+       }
+
+       .containerBodyLeft>p {
+           text-align: start;
+       }
+
+       .containerBodyRight {
+           margin: 0 18px 20px 7px;
+       }
+
+       .inputDados {
+           width: 385px;
+           height: 30px;
+       }
+
+       .hr>span {
+           width: 700px;
+           padding: 5 5;
+       }
+
+       .cards {
+           margin: 0px 23px 0px 0px;
+
+       }
+
+       .infoCards {
+           margin: 0px 23px 50px 0px;
+       }
+
+       .containerCards {
+           width: 170px;
+           height: 140px;
+       }
    }
