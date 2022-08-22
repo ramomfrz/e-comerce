@@ -2,7 +2,7 @@ import React from "react";
 
 const Body = () => {
     return (
-        <main className="container">
+        <form className="container">
             <div className="bodyAll">
                 <div className="containerBodyLeft">
                     <h3 className="tituloh3">Ajude o algorítmo a ser mais certeiro</h3>
@@ -13,11 +13,11 @@ const Body = () => {
                 </div>
                 <div className="containerBodyRight">
                     <label>Seu nome:</label>
-                    <input type="text" className="inputDados" />
+                    <input type="text" className="inputDados" required />
                     <label>E-mail</label>
-                    <input type="text" className="inputDados" />
+                    <input type="email" className="inputDados" required />
                     <label>CPF</label>
-                    <input type="text" className="inputDados" />
+                    <input type="text" className="inputDados" required />
                     <div className="divLabel">
                         <div className="divRadios">
                             <input type="radio" />
@@ -33,7 +33,7 @@ const Body = () => {
             </div>
 
 
-        </main >
+        </form >
     )
 }
 
