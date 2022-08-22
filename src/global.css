@@ -26,7 +26,7 @@
        text-align: center;
        width: 100%;
        height: 400px;
-       clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 68%);
+       /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 68%); */
        font-size: 25px;
 
    }
@@ -129,6 +129,7 @@
    }
 
    /* ----------------------------- CARDS ------------------------------------- */
+
    .containerCards {
        display: flex;
        justify-content: center;
@@ -209,6 +210,23 @@
    @media (max-width: 1000px) {
        .containerMap {
            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+       }
+
+       .navButton {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+       }
+
+       .bodyAll {
+           flex-direction: column;
+       }
+
+       .containerCards {
+           flex-direction: row;
+       }
+
+       .sectionContainer {
+           flex-direction: column;
        }
    }
 
